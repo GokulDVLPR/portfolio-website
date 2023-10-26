@@ -1,0 +1,37 @@
+.skills__container{
+    display: grid;
+    grid-template-columns: 35% 53%;
+    gap: 12%;
+    background:#55BCC9;
+}
+.skills__images{
+    height: fit-content;
+    max-height: 40rem;
+    border: 1rem  solid(var(--color-white));
+     transition: var(--transition);
+}
+.skills__para{
+    margin: 3rem  1.5rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12rem;
+}
+
+@media screen and (max-width:1024px){
+    .skills__container{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media screen and (max-width:600px){
+    .skills__container{
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .skills__para{
+        column-gap: 1px;
+    }
+    
+}
+

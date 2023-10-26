@@ -1,0 +1,45 @@
+#nav{
+    width:100rem;
+    height:5rem;
+    display: grid;
+    place-items: center;
+     background-color: aquamarine;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 200;
+    box-shadow: 0 1rem 1.5rem hsla(black,68%, 42%, 20%);
+    transition: var(--transition);
+}
+.nav__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo{
+    width: 2.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display:flex;
+    place-items: center;
+
+}
+
+.nav__menu{
+    display: flex;
+    gap: 15rem;
+    background-color: aquamarine;
+    width: 100wv;
+        
+}
+@media screen and (max-width: 1024px) {
+    .nav__menu{
+         display: none;
+    }
+}
+@media screen and(max-width: 600px){
+   .nav__menu{
+    display: none;
+   } 
+}
